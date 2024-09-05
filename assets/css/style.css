@@ -1,0 +1,164 @@
+/* =======================
+   General Body Styling
+   ======================= */
+body {
+    background: #021024;
+    width: 100vw;
+    height: 100vh;
+    color: #FFF;
+    overflow-x: hidden;
+}
+
+/* =======================
+   Header & Main Styling
+   ======================= */
+header {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* =======================
+   Navbar Styling
+   ======================= */
+.navbar {
+    top: 50px;
+}
+
+/* =======================
+   Navbar Logo Styling
+   ======================= */
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    background: none;
+}
+
+/* =======================
+   Navbar Links Styling
+   ======================= */
+.navbar-nav .nav-link {
+    color: #FFFF;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 1px;
+}
+
+/* Hover Effect for Navbar Links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #C1E8FF;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* =======================
+   Carousel Styling
+   ======================= */
+.carousel-item {
+    padding: 20px;
+}
+
+/* Carousel Images */
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Glitch Effect for Carousel Items */
+.carousel-item .glitch {
+    object-position: top;
+}
+
+/* Carousel Captions */
+.carousel-caption p {
+    font-size: 24px;
+}
+
+.carousel-caption h5 {
+    font-size: 32px;
+}
+
+.carousel-caption p,
+.carousel-caption h5 {
+    color: #FFFF;
+}
+
+/* =======================
+   Carousel Indicators
+   ======================= */
+.carousel .carousel-indicators [data-bs-target] {
+    background-color: #C1E8FF;
+}
+
+/* =======================
+   Question 1
+   ======================= */
+
+
+table {
+    min-width: 560px;
+    margin: 0 auto;
+}
+
+table, th, td, tr {
+    border: 3px solid #052659;
+}
+
+th, td {
+    font-weight: bold;
+    text-align: center;
+}
+
+th {
+    background-color: #7DA0CA;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+td {
+    background-color: #C1E8FF;
+    color: #021024;
+    font-size: 20px;
+    padding: 0 50px;
+    transition: .8s ease-in-out;
+}
+
+.blue.active {
+    background-color: blue;
+    color: white;
+}
+
+.green.active {
+    background-color: green;
+    color: white;
+}
+
+/* =======================
+   Question 2
+   ======================= */
+
+.form-label {
+    font-size: 24px;
+}
+
+.form-select {
+    width: 75px;
+}
+
+#question-3 {
+    background: orange;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Activity</title>
+
+    <link rel="icon" href="assets/img/android-chrome-512x512.png" type="image/png">
+    <!--project's bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--project's icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--project's css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg z-3 w-100 position-fixed">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <div class="left d-flex gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Questão 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Questão 2</a>
+                        </li>
+                    </div>
+                    <li>
+                        <a class="navbar-logo" href="#"><img src="assets/img/android-chrome-512x512-removebg.png"></a>
+                    </li>
+                    <div class="right d-flex gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Questão 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Surpresa</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/dont.jpeg" class="d-block w-100 glitch opacity-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Questão 1</h5>
+                    <p>Questão das tabelas coloridas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/jujutsu_kaisen.jpeg" class="d-block w-100 opacity-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Questão 2</h5>
+                    <p>Questão dos formulários.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/gojo_e_sukuna.png" class="d-block w-100 opacity-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Questão 3</h5>
+                    <p>Questão das imagens dando zoom.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+<main class="w-100">
+    <section id="question-1">
+        <div class="row">
+            <h1>Questão 1</h1>
+            <div class="container">
+                <table>
+                    <tr>
+                        <th class="books " data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Clique para trocar a cor">Livros
+                        </th>
+                        <th class="pages" data-bs-toggle="tooltip" data-bs-placement="top" title="Clique para trocar a cor">
+                            Páginas
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="blue">Naruto</td>
+                        <td class="green">200000</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">Dragon Ball</td>
+                        <td class="green">Infinito</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">Death Note</td>
+                        <td class="green">Morte</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">Monster</td>
+                        <td class="green">547486751787</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="question-2" class="mt-5">
+        <div class="row">
+            <h1>Questão 2</h1>
+            <form class="col-4 d-flex">
+                <div class="mb-3 d-flex gap-3">
+                    <label for="select" class="form-label">Selecione quantos campos deseja criar</label>
+                    <select id="select" class="form-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="question-3">
+        <div class="container-fluid">
+            <h1>Questão 3</h1>
+        </div>
+    </section>
+</main>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
