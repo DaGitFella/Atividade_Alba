@@ -150,13 +150,39 @@ td {
 /* =======================
    Question 2
    ======================= */
-
 .form-label {
     font-size: 24px;
 }
 
 .form-select {
     width: 75px;
+    height: 100%;
+}
+
+form .btn {
+    padding: 16px 25px;
+    height: 44px;
+    background: linear-gradient(90deg, #C1E8FF, #052659, #7DA0CA);
+    animation: gradient-animation 5s linear infinite;
+    background-size: 300% 100%;
+}
+
+form .btn:hover {
+    background: none;
+    border-image: linear-gradient(90deg, #DF643F, #A73728, #3D1F1D);
+    animation: animate-border 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Começa à esquerda */
+    }
+    50% {
+        background-position: 100% 50%; /* Vai para a direita */
+    }
+    100% {
+        background-position: 0% 50%; /* Retorna à esquerda */
+    }
 }
 
 #question-3 {
