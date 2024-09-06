@@ -112,6 +112,7 @@ a:hover::after {
 table {
     min-width: 560px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 table, th, td, tr {
@@ -126,7 +127,6 @@ th, td {
 th {
     background-color: #7DA0CA;
     font-size: 24px;
-    cursor: pointer;
 }
 
 td {
@@ -150,13 +150,14 @@ td {
 /* =======================
    Question 2
    ======================= */
+
 .form-label {
     font-size: 24px;
 }
 
 .form-select {
     width: 75px;
-    height: 100%;
+    height: 50px;
 }
 
 form .btn {
@@ -165,26 +166,54 @@ form .btn {
     background: linear-gradient(90deg, #C1E8FF, #052659, #7DA0CA);
     animation: gradient-animation 5s linear infinite;
     background-size: 300% 100%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2),
+    0 8px 20px rgba(255, 255, 255, 0.1);
 }
 
 form .btn:hover {
     background: none;
-    border-image: linear-gradient(90deg, #DF643F, #A73728, #3D1F1D);
-    animation: animate-border 5s linear infinite;
+    border: 2px solid #C1E8FF;
+    color: #7DA0CA;
+    text-shadow:
+            0 0 5px #C1E8FF,
+            0 0 10px #C1E8FF,
+            0 0 15px #052659,
+            0 0 20px #052659,
+            0 0 30px #7DA0CA,
+            0 0 40px #7DA0CA;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4),
+    0 16px 40px rgba(255, 255, 255, 0.3);
 }
+
 
 @keyframes gradient-animation {
     0% {
-        background-position: 0% 50%; /* Começa à esquerda */
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%; /* Vai para a direita */
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%; /* Retorna à esquerda */
+        background-position: 0% 50%;
     }
 }
 
-#question-3 {
-    background: orange;
+/* =======================
+   Question 2
+   ======================= */
+
+#question-3 div{
+    overflow: hidden;
+}
+
+#question-3 img {
+    width: 150px;
+    transition: ease-in-out .3s;
+}
+
+.zoom-container i {
+    font-size: 50px;
+    cursor: pointer;
 }
