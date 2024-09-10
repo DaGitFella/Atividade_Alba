@@ -15,7 +15,7 @@ const questionTwo = document.querySelector('#question-2');
 const questionThree = document.querySelector('#question-3');
 
 // Nav Script
-navItems.forEach((navItem,index) => {
+navItems.forEach((navItem, index) => {
     navItem.addEventListener('click', () => {
         switch (index) {
             case 0:
@@ -74,13 +74,23 @@ pagesHeader.addEventListener('click', () => {
 // Question 2
 myForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    for(let i = 0; i < Number(myFormSelect.value); i++) {
-    let textField = document.createElement('input');
-    textField.type = 'text';
-    textField.classList.add('form-control', 'mt-5');
+    const clickedButton = event.submitter.id;
+    if (clickedButton === 'create') {
+        for (let i = 0; i < Number(myFormSelect.value); i++) {
+            let textField = document.createElement('input');
+            textField.type = 'text';
+            textField.classList.add('form-control', 'mt-5');
 
-    textFieldContainer.appendChild(textField);
-
+            textFieldContainer.appendChild(textField);
+            console.log(textFieldContainer.children.length)
+        }
+    } else if (clickedButton === 'remove' && myFormSelect.value <= textFieldContainer.children.length) {
+        for (let i = 0; i < Number(myFormSelect.value); i++) {
+            textFieldContainer.removeChild(textFieldContainer.lastElementChild);
+        }
+    } else if (myFormSelect.value > textFieldContainer.children.length) {
+        let toast = document.querySelector('.toast');
+        toast.style.display = 'block';
     }
 })
 
